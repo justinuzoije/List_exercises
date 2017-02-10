@@ -1,9 +1,9 @@
-theList = [1,2,2,4,5,6]
+theList = [1,4,4,5,4,4,11,11]
 
 newList = []
 
 for i in theList:
-    newList.append(theList[i])
-    #print i
+    if i not in newList:
+        newList.append(i)
 
 print newList
